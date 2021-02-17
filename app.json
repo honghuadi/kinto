@@ -10,10 +10,6 @@
         "PROTOCOL": {
             "description": "v2ray protocol, vmess or vless",
             "value": "vmess"
-        },
-        "WSPATH": {
-            "description": "v2ray inbound web socket parth",
-            "value": "/e8g9"
         }
     },
     "website": "https://starts.sh",
