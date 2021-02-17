@@ -11,12 +11,23 @@ cat << EOF > /etc/config.json
         "decryption": "none",
         "clients": [
           {
-            "id": "$UUID"
+            "id": "$UUID",
+            "alterId":$ALTERID
           }
         ]
       },
       "streamSettings": {
-        "network": "ws"
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": null
+        },
+        "wsSettings": {
+          "connectionReuse": true,
+          "path": "$WSPATH",
+          "headers": null
+        }
       }
     }
   ],
