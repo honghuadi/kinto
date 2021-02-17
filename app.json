@@ -3,16 +3,28 @@
     "description": "deploy v2ray to heroku",
     "keywords": ["v2ray"],
     "env": {
-        "UUID": {
-            "description": "v2ray UUID",
-            "value": "c95ef1d4-f3ac-4586-96e9-234a37dda068"        
+        "PORT": {
+            "description": "v2ray inbound port",
+            "value": "443"
         },
         "PROTOCOL": {
             "description": "v2ray protocol, vmess or vless",
             "value": "vmess"
+        },
+        "UUID": {
+            "description": "v2ray UUID",
+            "value": "c95ef1d4-f3ac-4586-96e9-234a37dda068"        
+        },
+        "ALTERID": {
+            "description": "v2ray client alterId",
+            "value": "8"
+        },
+        "WSPATH": {
+            "description": "v2ray inbound web socket path",
+            "value": "/"
         }
     },
     "website": "https://starts.sh",
-    "repository": "https://github.com/yeahwu/kinto",
+    "repository": "https://github.com/honghuadi/kinto",
     "stack": "container"
 }
